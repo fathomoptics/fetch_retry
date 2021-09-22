@@ -1,4 +1,5 @@
 {
+  "name": "@fathomoptics/fetch_retry",
   "version": "1.0.0",
   "description": "Light npm package to add a retry function to fetch, built as a personal hack and not compatible with fetch-retry in npmjs",
   "main": "index.js",
