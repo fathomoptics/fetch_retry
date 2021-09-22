@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "description": "Light npm package to add a retry function to fetch, built as a personal hack and not compatible with fetch-retry in npmjs",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint js/lumii*.js",
+    "build": "browserify --im -x node-fetch index.js -o build/fetch-retry.js",
+    "clean": "rm -rf build/*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "./fetch-retry.js"
+  ],
+  "browser": {
+    "node-fetch": false
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fathomoptics/fetch_retry.git"
+  },
+  "keywords": [
+    "fetch",
+    "retry",
+    "fathom"
+  ],
+  "author": "matt@fathomoptics.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fathomoptics/fetch_retry/issues"
+  },
+  "homepage": "http://www.fathomoptics.com"
+}
+
